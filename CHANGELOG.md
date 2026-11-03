@@ -1,6 +1,7 @@
 # Historial de funciones
 
 ## Versión actual
+- Eliminar órdenes de servicio, órdenes de entrega y cotizaciones, con confirmación en dos pasos
 - Contraseña de administrador con código de recuperación
 - Copia de seguridad y restauración
 - Recordatorios de cobro por correo y WhatsApp, activables por cliente
