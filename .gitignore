@@ -1,0 +1,6 @@
+# Copias de seguridad y documentos con datos de clientes: no subir al repositorio
+respaldo-*.json
+*.rut.pdf
+RUT*.pdf
+*.xlsx
+.DS_Store
