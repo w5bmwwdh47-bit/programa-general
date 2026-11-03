@@ -4,6 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Control de plagas y vectores</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#2f6f4f">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="EXTINPLAGAS">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f2f4f1;--surf:#fff;--ink:#17252a;--mute:#5d6b70;--line:#d9dfdb;--green:#2f6f4f;--amber:#e0a100;--red:#b3402f;--ong:#fff;
@@ -88,7 +96,7 @@ function render(){var h="";if(!ses&&lgv){document.getElementById("app").innerHTM
 if(!ses){h='<div class="login"><h1>'+esc(S.prices.company)+'</h1><p>Plataforma interna de la empresa. Elige tu portal para registrar y consultar los servicios.</p><div class="doors">'+
 '<div class="door"><h2>Portal de administración</h2><p>Crea órdenes, asigna técnicos, gestiona clientes y revisa los informes.</p><button class="btn" data-act="login-admin">Entrar como administrador</button></div>'+
 '<div class="door t"><h2>Portal de técnicos</h2><p>Consulta tus servicios del día y registra lo aplicado en campo.</p><label>¿Quién eres?<select id="who">'+opts(S.techs,function(t){return t.name})+'</select></label><br><button class="btn" data-act="login-tech">Entrar como técnico</button></div></div>'+
-'<p class="note">Compilación 2026-11-03-b · Versión de demostración: los datos se guardan solo en este navegador. Para uso real con varios usuarios se necesita un servidor y acceso con clave.</p></div>';
+'<p class="note">Compilación 2026-11-03-c · Versión de demostración: los datos se guardan solo en este navegador. Para uso real con varios usuarios se necesita un servidor y acceso con clave.</p></div>';
 }else{
 var adm=ses.role=="admin";
 h='<div class="top"><b>'+(adm?"Administración":"Técnico: "+esc(tc(ses.id)))+'</b><button data-act="out">Cambiar portal</button></div>';
@@ -381,6 +389,7 @@ else if(p[0]=="t"){S.techs=S.techs.filter(function(o){return o.id!=id})}
 else if(p[0]=="p"){S.prods=S.prods.filter(function(o){return o.id!=id})}
 else if(p[0]=="r"){S.prices.items=S.prices.items.filter(function(o){return o.id!=id})}
 save();render()});
+if("serviceWorker"in navigator&&location.protocol.indexOf("http")==0){try{navigator.serviceWorker.register("sw.js").catch(function(){})}catch(e){}}
 render();
 </script>
 </body>
