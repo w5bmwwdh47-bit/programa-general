@@ -18,8 +18,12 @@ Aplicativo web de uso interno para la gestión de una empresa de control de plag
 **Técnicos**
 - Servicios asignados con hora y dirección
 - Check-in con hora y ubicación
-- **Informe de servicio**: actividad, plagas, nivel de infestación, producto, dosis, método, área, fotos, firma del cliente, observaciones, recomendaciones y próxima visita
+- **Informe de servicio** con el formato de la empresa: datos del cliente y del servicio, **plagas y vectores con descripción profesional** (más "Otros"), **varios químicos** (cantidad, unidad y método), notas, recomendaciones específicas y de seguridad con tiempo de reingreso, **fotos sin límite**, firma del cliente, encabezado y pie con numeración de páginas, listo para PDF
 - Informe imprimible o en PDF
+
+## Instalarlo como app
+
+Desde la dirección de GitHub Pages se instala en PC, tablet y celular, con ícono propio y funcionamiento sin conexión. Ver `docs/INSTALAR_COMO_APP.md`.
 
 ## Cómo usarlo
 
@@ -40,6 +44,9 @@ Aplicativo web de uso interno para la gestión de una empresa de control de plag
 
 ```
 index.html                  Aplicativo completo
+manifest.webmanifest        Datos para instalarlo como app
+sw.js                       Funcionamiento sin conexión y actualizaciones
+icons/                      Íconos de la app
 README.md                   Este archivo
 CHANGELOG.md                Historial de funciones
 .gitignore                  Evita subir respaldos y documentos con datos de clientes
@@ -48,6 +55,7 @@ docs/
   SEGURIDAD_Y_RESPALDOS.md  Contraseña, recuperación y copias de seguridad
   ROADMAP.md                Pendientes y arquitectura recomendada
   SUBIR_A_GITHUB.md         Pasos para publicar el repositorio
+  INSTALAR_COMO_APP.md      Instalar en PC, tablet y celular
 ```
 
 ## Tecnologías
