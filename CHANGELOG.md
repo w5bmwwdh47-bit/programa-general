@@ -1,6 +1,11 @@
 # Historial de funciones
 
 ## Versión actual
+- Rediseño visual: menú lateral, tipografía IBM Plex Sans, tablas y formularios más sobrios (compilación 2026-11-06-f)
+- Clientes ampliados: línea de servicio, precio, estado de pago, persona que atiende, instrucciones para el técnico y observaciones; el técnico ve esos datos en cada servicio
+- Lectura del RUT en PDF directamente en el navegador, sin IA
+- Cotización con formato profesional igual al informe, fotos adjuntas sin límite y envío formal por correo (Gmail o aplicación de correo)
+- El módulo "Fumigación y extintores" ahora se llama "Certificados y servicios" y admite seguridad industrial
 - Informe de servicio rediseñado con el formato de la empresa (encabezado, secciones, tabla de químicos con varias filas, recomendaciones de seguridad con tiempo de reingreso, fotos en cuadrícula, firma del cliente, pie con página X de Y). Datos del encabezado configurables (compilación 2026-11-03-e)
 - Informe del técnico: fotos sin límite de cantidad (cámara o galería), listado de 20 plagas y vectores con descripción profesional en el informe y opción "Otros" para especificar (compilación 2026-11-03-d)
 - Instalable como app (PC, tablet y celular) con ícono propio y funcionamiento sin conexión (compilación 2026-11-03-c)

@@ -7,12 +7,12 @@ Aplicativo web de uso interno para la gestión de una empresa de control de plag
 **Administración** (con contraseña)
 - Resumen de órdenes y servicios
 - Órdenes de servicio y **calendario** (día, semana, mes) con horas, técnico y tiempos libres
-- **Cotizaciones** estandarizadas, editables, con IVA por cotización, fotos de productos y lectura de RUT
+- **Cotizaciones** con documento profesional (mismo formato del informe), editables, IVA por cotización, fotos ilimitadas, lectura de RUT y envío formal por correo con tu autorización
 - **Entregas y ventas** de extintores e insumos, con catálogo, inventario y descuento de stock
 - **Finanzas**: ingresos, gastos, facturas, anticipos, retenciones, estado de resultados y cartera
 - **Recordatorios de cobro** por correo y WhatsApp (con un clic), activables por cliente
-- **Fumigación y extintores**: vencimientos, encargado, celular, precio habitual y descripción
-- **Clientes** con historial completo y **Técnicos**
+- **Certificados y servicios**: extintores, fumigación y seguridad industrial, con vencimientos, encargado, celular, precio habitual y descripción
+- **Clientes** con línea de servicio, precio, estado de pago, persona que atiende, instrucciones para el técnico e historial; lectura del RUT en PDF sin IA. **Técnicos**
 - **Respaldo y seguridad**: copia de seguridad, restauración y cambio de contraseña
 
 **Técnicos**
@@ -37,7 +37,8 @@ Desde la dirección de GitHub Pages se instala en PC, tablet y celular, con íco
 - **Haz copias de seguridad con frecuencia** (pestaña Respaldo y seguridad). Si se borran los datos del navegador, se pierden.
 - La contraseña es una **barrera básica**, no seguridad real (ver `docs/SEGURIDAD_Y_RESPALDOS.md`).
 - Los recordatorios de cobro **no se envían solos**: abren el correo o WhatsApp con el mensaje redactado.
-- La **lectura de RUT** y la **generación de cotizaciones con IA** dependen de Claude y solo funcionan cuando la página está publicada en claude.ai. Fuera de ahí, la página avisa que no están disponibles y se llenan los datos a mano. Todo lo demás funciona igual.
+- La **lectura del RUT en PDF** funciona en cualquier lugar. La lectura de **fotos del RUT** y la **generación de cotizaciones con IA** dependen de Claude y solo funcionan publicadas en claude.ai.
+- El **envío de correos** abre Gmail o tu aplicación de correo con el mensaje listo; no se envía solo.
 - Los valores de ejemplo (precios, NIT, productos) son provisionales.
 
 ## Estructura del repositorio
@@ -56,6 +57,7 @@ docs/
   ROADMAP.md                Pendientes y arquitectura recomendada
   SUBIR_A_GITHUB.md         Pasos para publicar el repositorio
   INSTALAR_COMO_APP.md      Instalar en PC, tablet y celular
+  MIGRACION.md              Cómo traer la información de otra aplicación
 ```
 
 ## Tecnologías
