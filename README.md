@@ -9,7 +9,7 @@ Aplicativo web de uso interno para la gestión de una empresa de control de plag
 - Órdenes de servicio y **calendario** (día, semana, mes) con horas, técnico y tiempos libres
 - **Cotizaciones** con documento profesional (mismo formato del informe), editables, IVA por cotización, fotos ilimitadas, lectura de RUT y envío formal por correo con tu autorización
 - **Entregas y ventas** de extintores e insumos, con catálogo, inventario y descuento de stock
-- **Finanzas**: ingresos, gastos, facturas, anticipos, retenciones, estado de resultados y cartera
+- **Finanzas** (modelo de «Gestión financiera»): resumen mensual, ventas, pagos con retención e ICA, cartera con estado de cuenta, gastos, socios con reparto de utilidad por línea, informe consolidado imprimible e importación de los datos de la aplicación anterior
 - **Recordatorios de cobro** por correo y WhatsApp (con un clic), activables por cliente
 - **Certificados y servicios**: extintores, fumigación y seguridad industrial, con vencimientos, encargado, celular, precio habitual y descripción
 - **Clientes** con línea de servicio, precio, estado de pago, persona que atiende, instrucciones para el técnico e historial; lectura del RUT en PDF sin IA. **Técnicos**
@@ -33,7 +33,7 @@ Desde la dirección de GitHub Pages se instala en PC, tablet y celular, con íco
 
 ## Limitaciones importantes
 
-- **Los datos se guardan en el navegador de cada equipo** (almacenamiento local). El administrador no ve lo que registra un técnico desde su celular. Hacen falta una base de datos compartida y usuarios (ver `docs/ROADMAP.md`).
+- **Sin la nube activada, los datos se guardan en el navegador de cada equipo.** Para compartir información entre administrador y técnicos se activa Supabase (ver `docs/NUBE_SUPABASE.md`, es gratuito).
 - **Haz copias de seguridad con frecuencia** (pestaña Respaldo y seguridad). Si se borran los datos del navegador, se pierden.
 - La contraseña es una **barrera básica**, no seguridad real (ver `docs/SEGURIDAD_Y_RESPALDOS.md`).
 - Los recordatorios de cobro **no se envían solos**: abren el correo o WhatsApp con el mensaje redactado.
@@ -45,6 +45,7 @@ Desde la dirección de GitHub Pages se instala en PC, tablet y celular, con íco
 
 ```
 index.html                  Aplicativo completo
+config.js                   Conexión a la nube (desactivada por defecto)
 manifest.webmanifest        Datos para instalarlo como app
 sw.js                       Funcionamiento sin conexión y actualizaciones
 icons/                      Íconos de la app
@@ -58,6 +59,8 @@ docs/
   SUBIR_A_GITHUB.md         Pasos para publicar el repositorio
   INSTALAR_COMO_APP.md      Instalar en PC, tablet y celular
   MIGRACION.md              Cómo traer la información de otra aplicación
+  NUBE_SUPABASE.md          Datos compartidos entre administrador y técnicos
+  supabase_operaciones.sql  Script de la base de datos en Supabase
 ```
 
 ## Tecnologías

@@ -1,6 +1,11 @@
 # Historial de funciones
 
 ## Versión actual
+- Datos compartidos en la nube con Supabase: ingreso con correo y contraseña, roles de administrador y técnico, sincronización en tiempo real, fotos en almacenamiento privado (compilación 2026-11-07-g)
+- Finanzas rediseñadas con el modelo de la aplicación Gestión financiera: ventas (facturas, cuentas de cobro, notas crédito), pagos con retención e ICA, cartera por antigüedad con estado de cuenta, gastos, socios, informe consolidado e importación de sus datos
+- Cotizaciones: descripción breve por servicio y sin sección de firma
+- Informe del servicio más corto y ordenado: resumen en cuadrícula, fotos en 3 columnas, seguridad en 2 columnas y descripción de plagas como anexo opcional
+- Técnicos con correo de acceso
 - Rediseño visual: menú lateral, tipografía IBM Plex Sans, tablas y formularios más sobrios (compilación 2026-11-06-f)
 - Clientes ampliados: línea de servicio, precio, estado de pago, persona que atiende, instrucciones para el técnico y observaciones; el técnico ve esos datos en cada servicio
 - Lectura del RUT en PDF directamente en el navegador, sin IA
