@@ -59,6 +59,7 @@ docs/
   SUBIR_A_GITHUB.md         Pasos para publicar el repositorio
   INSTALAR_COMO_APP.md      Instalar en PC, tablet y celular
   MIGRACION.md              Cómo traer la información de otra aplicación
+  PASO_A_PASO_NUBE.md       Guía detallada para compartir datos entre dispositivos
   NUBE_SUPABASE.md          Datos compartidos entre administrador y técnicos
   supabase_operaciones.sql  Script de la base de datos en Supabase
 ```

@@ -1,6 +1,7 @@
 # Historial de funciones
 
 ## Versión actual
+- Cotización con texto de presentación de la empresa (editable en Datos y tarifas) y guía paso a paso para activar la nube; carga más robusta de la conexión a Supabase (compilación 2026-11-09-h)
 - Datos compartidos en la nube con Supabase: ingreso con correo y contraseña, roles de administrador y técnico, sincronización en tiempo real, fotos en almacenamiento privado (compilación 2026-11-07-g)
 - Finanzas rediseñadas con el modelo de la aplicación Gestión financiera: ventas (facturas, cuentas de cobro, notas crédito), pagos con retención e ICA, cartera por antigüedad con estado de cuenta, gastos, socios, informe consolidado e importación de sus datos
 - Cotizaciones: descripción breve por servicio y sin sección de firma
