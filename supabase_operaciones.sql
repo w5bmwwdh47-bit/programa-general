@@ -49,22 +49,22 @@ drop policy if exists "ops_records: admin borra" on public.ops_records;
 create policy "ops_records: admin borra" on public.ops_records
   for delete to authenticated using (public.ops_role() = 'admin');
 
--- TÉCNICO: solo lee órdenes, clientes, técnicos y la configuración de encabezados;
--- solo puede crear/actualizar órdenes (sus informes). No ve finanzas, cotizaciones ni cartera.
+-- TÉCNICO: solo lee órdenes, entregas, clientes, técnicos y la configuración de encabezados;
+-- solo puede crear/actualizar órdenes y entregas (sus informes). No ve finanzas, cotizaciones ni cartera.
 drop policy if exists "ops_records: tecnico lee" on public.ops_records;
 create policy "ops_records: tecnico lee" on public.ops_records
   for select to authenticated using (
     public.ops_role() = 'tecnico'
-    and (collection in ('orders','clients','techs') or (collection = 'cfg' and id = 'prices'))
+    and (collection in ('orders','clients','techs','del') or (collection = 'cfg' and id = 'prices'))
   );
 drop policy if exists "ops_records: tecnico inserta ordenes" on public.ops_records;
 create policy "ops_records: tecnico inserta ordenes" on public.ops_records
-  for insert to authenticated with check (public.ops_role() = 'tecnico' and collection = 'orders');
+  for insert to authenticated with check (public.ops_role() = 'tecnico' and collection in ('orders','del'));
 drop policy if exists "ops_records: tecnico actualiza ordenes" on public.ops_records;
 create policy "ops_records: tecnico actualiza ordenes" on public.ops_records
   for update to authenticated
-  using (public.ops_role() = 'tecnico' and collection = 'orders')
-  with check (public.ops_role() = 'tecnico' and collection = 'orders');
+  using (public.ops_role() = 'tecnico' and collection in ('orders','del'))
+  with check (public.ops_role() = 'tecnico' and collection in ('orders','del'));
 
 -- Tiempo real: los demás usuarios reciben los cambios al instante.
 do $$ begin
