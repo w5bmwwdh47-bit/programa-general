@@ -1,6 +1,11 @@
 # Historial de funciones
 
 ## Versión actual
+- Entregas y ventas de extintores programables (hora, duración y técnico): aparecen en el calendario con rayas, bloquean horarios y salen en el portal del técnico (compilación 2026-11-11-j)
+- Informe de entrega y recepción de extintores: persona que recibe, extintores recibidos, fotos de los extintores entregados y recibidos sin límite, notas y firma
+- El stock se descuenta una sola vez, desde el administrador, cuando la entrega pasa a Despachada o Entregada
+- Las cotizaciones se envían desde la cuenta de Gmail configurada (extin.plagas.sas@gmail.com por defecto)
+- Las cotizaciones se envían desde la cuenta de Gmail configurada (extin.plagas.sas@gmail.com por defecto), editable en Datos y tarifas (compilación 2026-11-10-i)
 - Cotización con texto de presentación de la empresa (editable en Datos y tarifas) y guía paso a paso para activar la nube; carga más robusta de la conexión a Supabase (compilación 2026-11-09-h)
 - Datos compartidos en la nube con Supabase: ingreso con correo y contraseña, roles de administrador y técnico, sincronización en tiempo real, fotos en almacenamiento privado (compilación 2026-11-07-g)
 - Finanzas rediseñadas con el modelo de la aplicación Gestión financiera: ventas (facturas, cuentas de cobro, notas crédito), pagos con retención e ICA, cartera por antigüedad con estado de cuenta, gastos, socios, informe consolidado e importación de sus datos

@@ -8,7 +8,7 @@ Aplicativo web de uso interno para la gestión de una empresa de control de plag
 - Resumen de órdenes y servicios
 - Órdenes de servicio y **calendario** (día, semana, mes) con horas, técnico y tiempos libres
 - **Cotizaciones** con documento profesional (mismo formato del informe), editables, IVA por cotización, fotos ilimitadas, lectura de RUT y envío formal por correo con tu autorización
-- **Entregas y ventas** de extintores e insumos, con catálogo, inventario y descuento de stock
+- **Entregas y ventas** de extintores e insumos, con catálogo, inventario y descuento de stock, programación en el calendario y portal del técnico con informe de entrega y fotos
 - **Finanzas** (modelo de «Gestión financiera»): resumen mensual, ventas, pagos con retención e ICA, cartera con estado de cuenta, gastos, socios con reparto de utilidad por línea, informe consolidado imprimible e importación de los datos de la aplicación anterior
 - **Recordatorios de cobro** por correo y WhatsApp (con un clic), activables por cliente
 - **Certificados y servicios**: extintores, fumigación y seguridad industrial, con vencimientos, encargado, celular, precio habitual y descripción
